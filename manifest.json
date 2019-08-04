@@ -1,0 +1,27 @@
+"manifest_version": 2,
+  "name": "Search Wikipedia",
+  "description": "Allows the user to seach Wikipedia from the context menu.",
+  "version": "1.0",
+  "default_locale": "en",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "56.0a1"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "permissions": [
+    "menus",
+    "activeTab"
+  ],
+
+     "sidebar_action": {
+    "default_icon": "icons/page-32.png",
+    "default_title" : "My sidebar",
+    "default_panel": "sidebar/sidebar.html"
+  }
+
+}
